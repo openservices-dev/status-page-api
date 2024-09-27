@@ -1,6 +1,5 @@
 import Projects from './Projects';
 import projects from './projects/index';
-import Issues from './projects/Issues';
 import repositories from '../repositories';
 
 const container = {
@@ -10,10 +9,6 @@ const container = {
 
   get projects() {
     return projects;
-  },
-
-  get Issues() {
-    return new Issues(repositories.Project);
   },
 };
 

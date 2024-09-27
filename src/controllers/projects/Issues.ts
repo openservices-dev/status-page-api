@@ -2,7 +2,6 @@ import APIError from '../../errors/APIError';
 
 class Issues implements ProjectIssuesController {
   constructor(
-    protected projectRepository: ProjectRepository,
     protected issueRepository: IssueRepository,
   ) {}
 
